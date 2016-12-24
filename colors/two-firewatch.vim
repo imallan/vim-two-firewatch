@@ -245,6 +245,7 @@ if has('gui_running') || &t_Co == 88 || &t_Co == 256
     let s:duo_2 = '718ecd'
     let s:duo_3 = 'aeb3b7'
 
+
     let s:syntax_color_renamed  = '33a0ff'
     let s:syntax_color_added    = '43d08a'
     let s:syntax_color_modified = 'e0c285'
@@ -274,7 +275,7 @@ if has('gui_running') || &t_Co == 88 || &t_Co == 256
 
     let s:syntax_fg               = s:uno_2
     let s:syntax_bg               = '282c34'
-    let s:syntax_accent           = '56b6c2'
+    let s:syntax_accent           = '53AEBA'
     let s:syntax_gutter           = '636d83'
     let s:syntax_selection        = '3e4452'
     let s:syntax_fold_bg          = '5c6370'
@@ -557,8 +558,20 @@ if has('gui_running') || &t_Co == 88 || &t_Co == 256
   call <sid>X('jsStorageClass',         s:duo_1,         '', '')
   call <sid>X('jsTemplateBraces',       s:syntax_accent, '', '')
   call <sid>X('jsTemplateVar',          s:duo_2,         '', '')
-  call <sid>X('jsThis',                 s:syntax_accent, '', '')
+  call <sid>X('jsThis',                 s:duo_2,         '', '')
   call <sid>X('jsUndefined',            s:uno_1,         '', '')
+  call <sid>X('jsImport',               s:duo_3,         '', '')
+  call <sid>X('jsFrom',                 s:duo_3,         '', '')
+  call <sid>X('jsReturn',               s:duo_3,         '', '')
+  call <sid>X('jsVariableDef',          s:duo_2,         '', '')
+  call <sid>X('jsRegexp',               s:syntax_accent, '', '')
+  call <sid>X('jsRegexpString',         s:syntax_accent, '', '')
+  call <sid>X('jsArrowFuncArgs',        s:duo_3,         '', '')
+  call <sid>X('jsObjectKey',            s:duo_1,         '', '')
+  call <sid>X('jsExportDefault',        s:duo_3,         '', '')
+  call <sid>X('jsExport',               s:duo_3,         '', '')
+  call <sid>X('jsClassKeyword',         s:duo_3,         '', '')
+  call <sid>X('jsExtendsKeyword',       s:duo_3,         '', '')
   " https://github.com/othree/yajs.vim
   call <sid>X('javascriptArrowFunc',    s:duo_3,         '', '')
   call <sid>X('javascriptClassExtends', s:duo_3,         '', '')
